@@ -32,17 +32,27 @@ public class Picture
     public void draw()
     {
         wall = new Square();
-        wall.moveVertical(80);
-        wall.changeSize(100);
+        wall.changeColor("green");
+        wall.moveVertical(100);
+        wall.changeSize(75);
+        wall.makeVisible();
+
+        wall = new Square();
+        wall.changeColor("blue");
+        wall.moveVertical(100);
+        wall.moveHorizontal(40);
+        wall.changeSize(75);
         wall.makeVisible();
 
         window = new Square();
-        window.changeColor("black");
+        window.changeColor("magenta");
         window.moveHorizontal(20);
-        window.moveVertical(100);
+        window.moveVertical(120);
+        window.changeSize(15);
         window.makeVisible();
 
         roof = new Triangle();
+        roof.changeColor("blue");
         roof.changeSize(50, 140);
         roof.moveHorizontal(60);
         roof.moveVertical(70);
@@ -77,9 +87,9 @@ public class Picture
     {
         if(wall != null)   // only if it's painted already...
         {
-            wall.changeColor("red");
-            window.changeColor("black");
-            roof.changeColor("green");
+            wall.changeColor("orange");
+            window.changeColor("light_gray");
+            roof.changeColor("white");
             sun.changeColor("yellow");
         }
     }
