@@ -30,37 +30,156 @@ public class Picture
      * Draw this picture.
      */
     public void draw()
-    {
+    {       // Building
         wall = new Square();
-        wall.changeColor("green");
-        wall.moveVertical(100);
+        wall.changeColor("white");
+        wall.moveVertical(150);
         wall.changeSize(75);
         wall.makeVisible();
-
+            // Building
         wall = new Square();
-        wall.changeColor("blue");
+        wall.changeColor("white");
+        wall.moveVertical(150);
+        wall.moveHorizontal(40);
+        wall.changeSize(75);
+        wall.makeVisible();
+            // Building
+        wall = new Square();
+        wall.changeColor("white");
         wall.moveVertical(100);
         wall.moveHorizontal(40);
         wall.changeSize(75);
         wall.makeVisible();
-
+            // Grass
+        wall = new Square();
+        wall.changeColor("green");
+        wall.moveVertical(200);
+        wall.moveHorizontal(-60);
+        wall.changeSize(300);
+        wall.makeVisible();
+            // Bottom Right Window
         window = new Square();
-        window.changeColor("magenta");
-        window.moveHorizontal(20);
+        window.changeColor("blue");
+        window.moveHorizontal(90);
+        window.moveVertical(160);
+        window.changeSize(15);
+        window.makeVisible();
+            // Top Right Window
+        window = new Square();
+        window.changeColor("blue");
+        window.moveHorizontal(90);
         window.moveVertical(120);
         window.changeSize(15);
         window.makeVisible();
+            // Top Left Window
+        window = new Square();
+        window.changeColor("blue");
+        window.moveHorizontal(50);
+        window.moveVertical(120);
+        window.changeSize(15);
+        window.makeVisible();
+            // Bottom Left Window
+        window = new Square();
+        window.changeColor("blue");
+        window.moveHorizontal(50);
+        window.moveVertical(160);
+        window.changeSize(15);
+        window.makeVisible();
+            // Garage Door
+        window = new Square();
+        window.changeColor("blue");
+        window.moveHorizontal(7);
+        window.moveVertical(170);
+        window.changeSize(30);
+        window.makeVisible();
 
         roof = new Triangle();
-        roof.changeColor("blue");
-        roof.changeSize(50, 140);
-        roof.moveHorizontal(60);
-        roof.moveVertical(70);
+        roof.changeColor("red");
+        roof.changeSize(45, 85);
+        roof.moveHorizontal(85);
+        roof.moveVertical(90);
         roof.makeVisible();
 
+        roof = new Triangle();
+        roof.changeColor("red");
+        roof.changeSize(20, 45);
+        roof.moveHorizontal(30);
+        roof.moveVertical(165);
+        roof.makeVisible();
+            // Moon white
+        sun = new Circle();
+        sun.changeColor("white");
+        sun.moveHorizontal(180);
+        sun.moveVertical(-10);
+        sun.changeSize(60);
+        sun.makeVisible();
+            // Bush on Right
+        sun = new Circle();
+        sun.changeColor("green");
+        sun.moveHorizontal(220);
+        sun.moveVertical(165);
+        sun.changeSize(40);
+        sun.makeVisible();
+            // Bush on Left
+        sun = new Circle();
+        sun.changeColor("green");
+        sun.moveHorizontal(170);
+        sun.moveVertical(165);
+        sun.changeSize(40);
+        sun.makeVisible();
+            // Tree 'trunk' bottom
+        window = new Square();
+        window.changeColor("green");
+        window.moveHorizontal(-40);
+        window.moveVertical(185);
+        window.changeSize(15);
+        window.makeVisible();
+            // Tree 'trunk' middle
+        window = new Square();
+        window.changeColor("green");
+        window.moveHorizontal(-40);
+        window.moveVertical(170);
+        window.changeSize(15);
+        window.makeVisible();
+            // Tree 'trunk' top
+        window = new Square();
+        window.changeColor("green");
+        window.moveHorizontal(-40);
+        window.moveVertical(155);
+        window.changeSize(15);
+        window.makeVisible();
+            // Tree 'leaves'
+        roof = new Triangle();
+        roof.changeColor("green");
+        roof.changeSize(75, 35);
+        roof.moveHorizontal(-25);
+        roof.moveVertical(120);
+        roof.makeVisible();
+            // Door Bottom
+        window = new Square();
+        window.changeColor("blue");
+        window.moveHorizontal(70);
+        window.moveVertical(185);
+        window.changeSize(15);
+        window.makeVisible();
+            // Door Top
+        window = new Square();
+        window.changeColor("blue");
+        window.moveHorizontal(70);
+        window.moveVertical(175);
+        window.changeSize(15);
+        window.makeVisible();
+            // Doorknob
         sun = new Circle();
         sun.changeColor("yellow");
-        sun.moveHorizontal(180);
+        sun.moveHorizontal(115);
+        sun.moveVertical(175);
+        sun.changeSize(7);
+        sun.makeVisible();
+            // Moon Cover
+        sun = new Circle();
+        sun.changeColor("black");
+        sun.moveHorizontal(170);
         sun.moveVertical(-10);
         sun.changeSize(60);
         sun.makeVisible();
